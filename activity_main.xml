@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#101014" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="24dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="GTA DOWNLOADER" android:textColor="#F44336" android:textSize="27sp"
+            android:textStyle="bold" android:gravity="center" android:layout_marginBottom="8dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="Загрузка файлов по прямой HTTPS-ссылке" android:textColor="#BDBDC7"
+            android:gravity="center" android:layout_marginBottom="28dp"/>
+        <EditText android:id="@+id/etUrl" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="HTTPS-ссылка на файл"
+            android:inputType="textUri" android:minLines="2" android:textColor="#FFFFFF"
+            android:textColorHint="#888891" android:backgroundTint="#F44336"/>
+        <EditText android:id="@+id/etName" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="14dp"
+            android:hint="Имя файла, например archive.zip" android:textColor="#FFFFFF"
+            android:textColorHint="#888891" android:backgroundTint="#F44336"/>
+        <Button android:id="@+id/btnStart" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="22dp"
+            android:text="НАЧАТЬ СКАЧИВАНИЕ" android:textStyle="bold"
+            android:textColor="#FFFFFF" android:backgroundTint="#D32F2F"/>
+        <ProgressBar android:id="@+id/progressBar" style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent" android:layout_height="12dp"
+            android:layout_marginTop="28dp" android:progressTint="#F44336"
+            android:progressBackgroundTint="#3A3A43" android:max="100"/>
+        <TextView android:id="@+id/tvStatus" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="14dp"
+            android:text="Ожидание загрузки" android:textColor="#FFFFFF" android:textSize="15sp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="Файлы сохраняются в Downloads. Используй ссылки на файлы, которые имеешь право скачивать."
+            android:textColor="#9E9EA8" android:textSize="12sp"/>
+    </LinearLayout>
+</ScrollView>
